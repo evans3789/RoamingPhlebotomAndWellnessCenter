@@ -27,9 +27,9 @@ const HomeSlider = () => {
     formData.append("image", image);
 
     try {
-      const token = localStorage.getItem("token"); // assume stored after login
+      const token = localStorage.getItem("token"); 
       const res = await axios.post(
-        "http://localhost:4000/api/slider",
+        "https://roamingphlebotomandwellnesscenter-backend.onrender.com/api/slider",
         formData,
         {
           headers: {
