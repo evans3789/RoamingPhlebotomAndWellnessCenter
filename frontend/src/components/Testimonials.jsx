@@ -50,7 +50,7 @@ const Testimonials = () => {
           <div className="testimonial-slide" key={item._id}>
             <div className="testimonial-card">
               <img
-                src={`http://localhost:4000/uploads/${item.image}`}
+                src={`https://roamingphlebotomandwellnesscenter-backend.onrender.com/uploads/${item.image}`}
                 alt={item.name}
                 className="testimonial-image"
               />
@@ -65,7 +65,7 @@ const Testimonials = () => {
         {testimonials.map((item, i) => (
           <img
             key={item._id}
-            src={`http://localhost:4000/uploads/${item.image}`}
+            src={`https://roamingphlebotomandwellnesscenter-backend.onrender.com/uploads/${item.image}`}
             alt={item.name}
             className={`nav-dot ${index === i ? "active" : ""}`}
             onClick={() => setIndex(i)}
