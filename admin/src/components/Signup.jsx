@@ -11,7 +11,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:4000/api/auth/signup", {
+      const res = await axios.post("https://roamingphlebotomandwellnesscenter-backend.onrender.com/api/auth/signup", {
         name,
         email,
         password,
