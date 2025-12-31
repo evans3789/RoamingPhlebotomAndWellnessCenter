@@ -24,11 +24,11 @@ const AdminDashboard = () => {
 
         const [messagesRes, emailsRes, testimonialsRes, slidersRes, teamRes] =
           await Promise.all([
-            axios.get("http://localhost:4000/api/contact", { headers }),
-            axios.get("http://localhost:4000/api/newsletter", { headers }),
-            axios.get("http://localhost:4000/api/testimonials", { headers }),
-            axios.get("http://localhost:4000/api/slider", { headers }),
-            axios.get("http://localhost:4000/api/team", { headers }),
+            axios.get("https://roamingphlebotomandwellnesscenter-backend.onrender.com/api/contact", { headers }),
+            axios.get("https://roamingphlebotomandwellnesscenter-backend.onrender.com/api/newsletter", { headers }),
+            axios.get("https://roamingphlebotomandwellnesscenter-backend.onrender.com/api/testimonials", { headers }),
+            axios.get("https://roamingphlebotomandwellnesscenter-backend.onrender.com/api/slider", { headers }),
+            axios.get("https://roamingphlebotomandwellnesscenter-backend.onrender.com/api/team", { headers }),
           ]);
 
         setStats({
