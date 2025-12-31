@@ -11,7 +11,7 @@ const Messages = () => {
     const fetchContacts = async () => {
       const token = localStorage.getItem("token"); // admin JWT
       try {
-        const res = await axios.get("http://localhost:4000/api/contact", {
+        const res = await axios.get("https://roamingphlebotomandwellnesscenter-backend.onrender.com/api/contact", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setContacts(res.data);
