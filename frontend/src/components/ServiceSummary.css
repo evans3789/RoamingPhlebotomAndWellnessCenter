@@ -1,0 +1,119 @@
+.service-summary {
+  padding: 60px 0px;
+}
+.service-summary .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.service-summary .container h1 {
+  color: var(--primary-blue);
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+}
+.service-summary .container p {
+  font-size: 18px;
+  width: 70%;
+  text-align: center;
+}
+.service-summary .container .summary-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  background: var(--bg-blue);
+  border-radius: 10px;
+}
+.service-summary .container .summary-items .summary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+  padding: 10px;
+}
+.service-summary .container .summary-items .summary-item h2 {
+  font-size: 18px;
+}
+.service-summary .container .summary-items .summary-item p {
+  width: 100%;
+  text-align: start;
+}
+
+/* Medium devices / tablets */
+@media (max-width: 1024px) {
+  .service-summary .container p {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .service-summary .container .summary-items .summary-item {
+    width: 45%;
+  }
+
+  .service-summary .container .summary-items {
+    gap: 15px;
+    padding: 15px;
+  }
+}
+
+/* Small devices / mobile */
+@media (max-width: 768px) {
+  .service-summary .container h1 {
+    font-size: 28px;
+  }
+
+  .service-summary .container p {
+    font-size: 14px;
+    width: 95%;
+  }
+
+  .service-summary .container .summary-items {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .service-summary .container .summary-items .summary-item {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .service-summary .container .summary-items .summary-item h2 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .service-summary .container .summary-items .summary-item p {
+    font-size: 14px;
+  }
+
+  .service-summary .container .summary-items .summary-item ul li {
+    font-size: 14px;
+  }
+}
+
+/* Extra small devices / very small mobile screens */
+@media (max-width: 480px) {
+  .service-summary .container h1 {
+    font-size: 24px;
+  }
+
+  .service-summary .container p {
+    font-size: 13px;
+  }
+
+  .service-summary .container .summary-items .summary-item h2 {
+    font-size: 14px;
+  }
+
+  .service-summary .container .summary-items .summary-item p,
+  .service-summary .container .summary-items .summary-item ul li {
+    font-size: 12px;
+  }
+}

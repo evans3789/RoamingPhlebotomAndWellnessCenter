@@ -1,0 +1,88 @@
+/* EmailsAdmin.css */
+
+.emails-admin {
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.emails-admin h1 {
+  text-align: center;
+  color: var(--primary-brown);
+  margin-bottom: 30px;
+  font-size: 36px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+.emails-admin table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--primary-brown);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.emails-admin thead {
+  background-color: var(--primary-green);
+  color: #fff;
+}
+
+.emails-admin th,
+.emails-admin td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.emails-admin tbody tr:nth-child(even) {
+  background-color: var(--primary-blue);
+}
+
+.emails-admin tbody tr:hover {
+  background-color: var(--bg-footer);
+  cursor: pointer;
+}
+
+.emails-admin th {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .emails-admin table,
+  .emails-admin thead,
+  .emails-admin tbody,
+  .emails-admin th,
+  .emails-admin td,
+  .emails-admin tr {
+    display: block;
+  }
+
+  .emails-admin thead tr {
+    display: none;
+  }
+
+  .emails-admin tbody tr {
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--primary-blue);
+    padding: 10px;
+  }
+
+  .emails-admin td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .emails-admin td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    width: 45%;
+    padding-left: 10px;
+    font-weight: 600;
+    text-align: left;
+  }
+}

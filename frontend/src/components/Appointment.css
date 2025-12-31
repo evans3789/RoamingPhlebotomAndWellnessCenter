@@ -1,0 +1,189 @@
+.appointment {
+  padding: 100px 0px;
+  background: var(--primary-blue);
+}
+
+.appointment .container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.appointment .container .appointment-left,
+.appointment-right {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.appointment .container .appointment-left h2 {
+  color: #fff;
+  width: fit-content;
+  border-bottom: 4px solid var(--primary-green);
+}
+.appointment .container .appointment-left p {
+  color: #fff;
+  width: fit-content;
+  font-size: 18px;
+}
+.appointment .container .appointment-left h1,
+.appointment-right h1 {
+  color: var(--primary-green);
+  font-weight: bolder;
+  font-size: 50px;
+}
+.appointment .container .appointment-right {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+}
+.appointment .container .appointment-right h2 {
+  text-align: center;
+  line-height: 30px;
+  font-size: 36px;
+}
+.appointment .container .appointment-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.appointment .container .appointment-right form .name-email {
+  display: flex;
+  gap: 3%;
+  align-items: center;
+}
+.appointment .container .appointment-right form .name-email .name,
+.email {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.appointment .container .appointment-right form input {
+  padding: 10px 12px;
+  outline: none;
+  font-size: 16px;
+  border: none;
+  background: #eff5f9;
+}
+.appointment .container .appointment-right form select {
+  padding: 5px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  background: #eff5f9;
+}
+.appointment .container .appointment-right form .month-time {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.appointment .container .appointment-right form .month-time input {
+  width: 50%;
+}
+.appointment .container .appointment-right form button {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  background: var(--primary-green);
+  transition: all 0.5s;
+}
+.appointment .container .appointment-right form button:hover {
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.6);
+}
+
+/* Tablets and small desktops */
+@media (max-width: 992px) {
+  .appointment .container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .appointment .container .appointment-left,
+  .appointment .container .appointment-right {
+    width: 100%;
+  }
+
+  .appointment .container .appointment-left h1 {
+    font-size: 40px;
+  }
+
+  .appointment .container .appointment-left p {
+    font-size: 16px;
+  }
+
+  .appointment .container .appointment-right h2 {
+    font-size: 30px;
+  }
+
+  .appointment .container .appointment-right form .name-email {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+  .appointment .container .appointment-right form .name-email .name,
+  .email {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .appointment .container .appointment-right form .name-email input {
+    width: 100%;
+  }
+  .appointment .container .appointment-right form .month-time {
+    flex-direction: column;
+  }
+
+  .appointment .container .appointment-right form .month-time input {
+    width: 100%;
+  }
+}
+
+/* Small devices (phones) */
+@media (max-width: 576px) {
+  .appointment {
+    padding: 80px 15px;
+  }
+
+  .appointment .container .appointment-left h2 {
+    font-size: 22px;
+  }
+
+  .appointment .container .appointment-left h1 {
+    font-size: 28px;
+  }
+
+  .appointment .container .appointment-left p {
+    font-size: 14px;
+  }
+
+  .appointment .container .appointment-right {
+    padding: 30px 15px;
+  }
+
+  .appointment .container .appointment-right h2 {
+    font-size: 24px;
+  }
+
+  .appointment .container .appointment-right form input,
+  .appointment .container .appointment-right form select,
+  .appointment .container .appointment-right form button {
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .appointment .container .appointment-right form button {
+    font-size: 16px;
+  }
+  .appointment .container .appointment-right form .name-email .name,
+  .email {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

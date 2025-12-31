@@ -1,0 +1,105 @@
+.book-appointment {
+  padding: 50px 0;
+}
+.book-appointment .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.book-appointment .container .left {
+  flex: 1 1 45%;
+  align-items: flex-start;
+}
+
+.book-appointment .container .left img {
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.book-appointment .container .right {
+  flex: 1 1 50%;
+  align-items: flex-start;
+}
+.steps {
+  padding: 10px 20px;
+}
+.alpha-list {
+  list-style: none;
+  counter-reset: alpha-counter;
+  padding-left: 0;
+}
+
+.alpha-list li {
+  counter-increment: alpha-counter;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.alpha-list li::before {
+  content: counter(alpha-counter, lower-alpha) ").";
+  color: var(--primary-green);
+  font-weight: bold;
+  margin-right: 10px;
+  min-width: 25px;
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .book-appointment .container {
+    gap: 30px;
+  }
+  .book-appointment .container .left {
+    width: 100%;
+  }
+  .book-appointment .container .left img {
+    width: 100%;
+  }
+  .book-appointment .container .right h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
+/* Small devices (phones) */
+@media (max-width: 576px) {
+  .book-appointment .container {
+    flex-direction: column;
+  }
+
+  .about .container .left,
+  .about .container .right {
+    flex: 1 1 100%;
+  }
+
+  .about .container .right h2 {
+    font-size: 24px;
+  }
+
+  .about .container .right p {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .about .container .right .icons {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .about .container .right .icon {
+    width: 150px;
+    height: 150px;
+  }
+
+  .about .container .right .icon h1 {
+    font-size: 24px;
+  }
+
+  .about .container .right .icon h3 {
+    font-size: 12px;
+  }
+}

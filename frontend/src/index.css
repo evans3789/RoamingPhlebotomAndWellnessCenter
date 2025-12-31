@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  scroll-behavior: smooth;
+  background: var(--bg-main);
+}
+:root {
+  /* --primary-blue: #10b2ef; */
+  --primary-blue: #3b4958;
+  --text-blue: #c4d9e4;
+  /* --primary-red: #dc3545; */
+  --primary-red: #c83437;
+  /* --primary-green: #198754; */
+  --primary-green: #798030;
+  --bg-main: #edeeeb;
+  /* --bg-footer: #1d2a4d; */
+  --bg-footer: #252525;
+  /* --bg-blue: #eff5f9; */
+  --bg-blue: #c4d9e4;
+  /* --borders: #3a60caef; */
+  --primary-brown: #b18b47;
+  --text-white: #ebebeb;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+a {
+  color: #acacac;
+  text-decoration: none;
+}
+
+.not-found {
+  width: 70%;
+  margin: auto;
+}
+
+.not-found .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.not-found .container .sad {
+  line-height: 150px;
+  font-size: 100px;
+}
+.not-found .container .actions {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.not-found .container .actions button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+/* Large screens (default already handled) */
+/* .container { width: 80%; } */
+
+/* Small laptops & large tablets */
+@media (max-width: 1200px) {
+  .container {
+    width: 88%;
+  }
+}
+
+/* Tablets (portrait & landscape) */
+@media (max-width: 992px) {
+  .container {
+    width: 92%;
+  }
+}
+
+/* Large phones */
+@media (max-width: 768px) {
+  .container {
+    width: 94%;
+  }
+}
+
+/* Small phones */
+@media (max-width: 576px) {
+  .container {
+    width: 96%;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 420px) {
+  .container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
