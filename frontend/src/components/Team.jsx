@@ -54,7 +54,7 @@ const Team = () => {
           {team.map((member) => (
             <div className="team-slide" key={member._id}>
               <img
-                src={`https://roamingphlebotomandwellnesscenter-backend.onrender.com/${member.image}`}
+                src={`https://roamingphlebotomandwellnesscenter-backend.onrender.com${member.image}`}
                 alt={member.name}
                 className="team-slide-image"
               />
