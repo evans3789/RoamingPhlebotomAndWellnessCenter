@@ -28,7 +28,7 @@ const Services = () => {
           {services.map((service) => (
             <div className="core-box" key={service._id}>
               <img
-                src={`http://localhost:4000${service.image}`}
+                src={`https://roamingphlebotomandwellnesscenter-backend.onrender.com/${service.image}`}
                 alt={service.title}
                 className="core-image"
               />
