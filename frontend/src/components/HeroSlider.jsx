@@ -53,7 +53,7 @@ const HeroSlider = () => {
             key={slide._id}
             className="slide"
             style={{
-              backgroundImage: `url(http://localhost:4000${slide.image})`,
+              backgroundImage: `url(https://roamingphlebotomandwellnesscenter-backend.onrender.com/${slide.image})`,
             }}
           >
             <div className="container">
